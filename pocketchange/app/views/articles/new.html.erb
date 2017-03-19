@@ -1,0 +1,19 @@
+<%= form_for :article do |f| %>
+  <p>
+    <%= f.label :bountyName, 'Name of the Bounty' %><br>
+    <%= f.text_field :bountyName %>
+  </p>
+  <p>
+    <%= f.label :bountyAmount, 'Bounty Amount' %><br>
+    <%= f.text_field :bountyAmount %>
+  </p>
+
+  <p>
+    <%= f.label :bountyDesccription, "Describe your Bounty" %><br>
+    <%= f.text_area :bountyDesccription %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
